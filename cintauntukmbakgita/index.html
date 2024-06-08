@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ungkapan Cinta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Ungkapan Cinta Mbak Gita</h1>
+    <p>Dalam penantian yang panjang, tak mengapa aku menunggu.</p>
+    <p>Karena kau berbeda, dari cinta yang pernah singgah, dan mantan yang pernah hilang.</p>
+    <p>Saat mataku menatapmu, hati ini langsung jatuh cinta.</p>
+    <p>Namun ada rasa takut menyelimuti, takut aku tak sesuai ekspektasimu, dan takut aku tak mampu memberi kepastian.</p>
+    <span class="heart">❤️</span>
+    <div class="btncinta">
+        <button class="button" onclick="revealMessage()">Terima saja</button>
+        <button class="button" id="rejectButton" onclick="revealMessagetolak()">Menolak Saya</button>
+    </div>
+    <p id="message" style="display:none;">Aku mencintaimu, apa adanya dirimu.</p>
+</div>
+
+<script>
+    function revealMessage() {
+        document.getElementById('message').style.display = 'block';
+    }
+
+    function revealMessagetolak() {
+        document.getElementById('rejectButton').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
+
